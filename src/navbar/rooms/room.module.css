@@ -1,0 +1,467 @@
+
+.rooms_container{
+    padding: 30px;
+}
+.card_container{
+    perspective: 1000px;
+    margin-left: -30px;
+}
+.luxury{
+    margin-left: -1070px;
+    font-size: larger;
+    font-weight: 600;
+}
+.best{
+    margin-left: -990px;
+    font-weight: 750;
+}
+.best span{
+    font-weight: 600;
+    margin-left: 15px;
+    color: brown;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.card{
+    width: 100%;
+    height: 320%;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: .6s;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.card_front,.card_Back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+.card_front{
+    background: url(/src/assets/2.jpg) no-repeat center center / cover;
+    height: 350px;
+    /* width: 320px; */
+    justify-content: end;
+}.card_Back{
+    background: url(/src/assets/2.jpg) no-repeat center center / cover;
+    height: 350px;
+    width: 320px;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+.card_Back::after{
+    position: absolute;
+    content: '';
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(236, 222, 222,0.3);
+    backdrop-filter: blur (5px);
+    border-radius: 12px;
+    border: 1px solid rgb(236, 222, 222,0.3);
+    z-index: -1;
+}
+.button{
+    width: 50%;
+    border-radius: 10px;
+}
+.price p{
+    margin-top: 30px;
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+.bookNow{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.card_Back .card_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+.card {
+    width: 320px;
+    height: 350px;
+    perspective: 1000px; 
+}
+.card_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s ease-in-out;
+}
+.card_front2 {
+    background: url(/src/assets/4.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back2 {
+    background: url(/src/assets/4.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back2::after{
+    position: absolute;
+    content: '';
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(236, 222, 222,0.3);
+    backdrop-filter: blur (5px);
+    border-radius: 12px;
+    border: 1px solid rgb(236, 222, 222,0.3);
+    z-index: -1;
+}
+.button1{
+    margin-top: 310px;
+    border-radius: 10px;
+}
+.price1 p{
+    margin-top: 30px;
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    width: 80px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.card:hover .card_inner {
+    transform: rotateY(180deg);
+}
+
+.card {
+    width: 320px;
+    height: 350px;
+    perspective: 1000px; 
+}
+.card_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s ease-in-out;
+}
+.card_front3 {
+    background: url(/src/assets/5.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back3 {
+    background: url(/src/assets/5.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back3::after{
+    position: absolute;
+    content: '';
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(236, 222, 222,0.3);
+    backdrop-filter: blur (5px);
+    border-radius: 12px;
+    border: 1px solid rgb(236, 222, 222,0.3);
+    z-index: -1;
+}
+.button2{
+    margin-top: 310px;
+    border-radius: 10px;
+}
+.price2 p{
+    margin-top: 30px;
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    width: 80px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.card:hover .card_inner {
+    transform: rotateY(180deg);
+}
+
+.card {
+    width: 320px;
+    height: 350px;
+    perspective: 1000px; 
+}
+.card_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s ease-in-out;
+}
+.card_front4 {
+    background: url(/src/assets/6.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back4 {
+    background: url(/src/assets/6.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back4::after{
+    position: absolute;
+    content: '';
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(236, 222, 222,0.3);
+    backdrop-filter: blur (5px);
+    border-radius: 12px;
+    border: 1px solid rgb(236, 222, 222,0.3);
+    z-index: -1;
+}
+.button3{
+    margin-top: 310px;
+    border-radius: 10px;
+}
+.price3 p{
+    margin-top: 30px;
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    width: 80px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.card:hover .card_inner {
+    transform: rotateY(180deg);
+}
+
+.card {
+    width: 320px;
+    height: 350px;
+    perspective: 1000px; 
+}
+.card_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s ease-in-out;
+}
+.card_front5 {
+    background: url(/src/assets/7.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back5 {
+    background: url(/src/assets/7.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back5::after{
+    position: absolute;
+    content: '';
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(236, 222, 222,0.3);
+    backdrop-filter: blur (5px);
+    border-radius: 12px;
+    border: 1px solid rgb(236, 222, 222,0.3);
+    z-index: -1;
+}
+.button4{
+    margin-top: 310px;
+    border-radius: 10px;
+}
+.price4 p{
+    margin-top: 30px;
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    width: 80px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.card:hover .card_inner {
+    transform: rotateY(180deg);
+}
+
+.card {
+    width: 320px;
+    height: 350px;
+    perspective: 1000px; 
+}
+.card_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s ease-in-out;
+}
+.card_front6 {
+    background: url(/src/assets/8.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back6 {
+    background: url(/src/assets/8.jpg) no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.card_Back6::after{
+    position: absolute;
+    content: '';
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(236, 222, 222,0.3);
+    backdrop-filter: blur (5px);
+    border-radius: 12px;
+    border: 1px solid rgb(236, 222, 222,0.3);
+    z-index: -1;
+}
+.button5{
+    margin-top: 310px;
+    border-radius: 10px;
+}
+.price5 p{
+    margin-top: 30px;
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    width: 80px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.card:hover .card_inner {
+    transform: rotateY(180deg);
+}
+
+.rooms_container {
+    padding: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 1110px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .luxury {
+        margin-left: -20px;
+        font-size: medium;
+    }
+    .best {
+        margin-left: -15px;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .card {
+        width: 100%;
+    }
+    .luxury {
+        margin-left: 0;
+        font-size: small;
+    }
+    .best {
+        margin-left: 0;
+        font-size: small;
+    }
+}
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .card {
+        width: 100%; 
+        height: auto; 
+    }
+    .card_inner {
+        height: 300px; 
+    }
+    .luxury {
+        font-size: smaller;
+        margin-left: 0;
+        text-align: center;
+    }
+    .best {
+        font-size: smaller;
+        margin-left: 0;
+        text-align: center;
+    }
+    .price p {
+        font-size: smaller;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,138 @@
+/* .root{
+    margin-left: -800px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.root_h2{
+    margin-left: -990px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+.root_h2 span{
+    display: block;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: red;
+}
+.root_h3{
+    margin-left: -990px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+.root_h3 span{
+    display: block;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: red;
+}
+.root_h4{
+    margin-left: -910px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+.root_h4 span{
+    display: block;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: red;
+}
+.loram_p{
+    font-size: medium;
+    color: darkgreen;
+    padding: 20px;
+    border: 1px solid rgb(131, 131, 131,0.2);
+    border-radius: 3px;
+} */
+
+/* General Styles */
+.testi h3{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.testi h3 span{
+    color: red;
+    margin-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+.root {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.root_h2, .root_h3, .root_h4 {
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+.root_h2 span, .root_h3 span, .root_h4 span {
+    display: block;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color:green;
+}
+.loram_p {
+    font-size: medium;
+    color: darkgreen;
+    padding: 20px;
+    border: 1px solid rgba(131, 131, 131, 0.2);
+    border-radius: 3px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .root {
+        margin-left: -400px;
+    }
+    .root_h2, .root_h3, .root_h4 {
+        margin-left: -500px;
+        font-size: large;
+    }
+    .root_h2 span, .root_h3 span, .root_h4 span {
+        font-size: 10px;
+    }
+    .loram_p {
+        font-size: medium;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .root {
+        margin-left: 0;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .root_h2, .root_h3, .root_h4 {
+        margin-left: 0;
+        font-size: medium;
+        text-align: center;
+    }
+    .root_h2 span, .root_h3 span, .root_h4 span {
+        font-size: 9px;
+    }
+    .loram_p {
+        font-size: small;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .root {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .root_h2, .root_h3, .root_h4 {
+        font-size: small;
+    }
+    .loram_p {
+        font-size: smaller;
+        padding: 5px;
+    }
+} 

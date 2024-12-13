@@ -1,0 +1,138 @@
+/* .Service_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.Service_cards .Service_card{
+    padding: 30px 25px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: gainsboro;
+    transition: 2s;
+}
+.Service_cards .Service_card:hover{
+    border-color: black;
+    border: 3px solid;
+    animation: Anim_shake 1s forwards linear;
+}
+.Service_cards .Service_card h3{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: initial;
+}
+.Service_cards .Service_card p{
+    font-size: 13px;
+    margin-top: 3px;
+    color: rgb(231, 11, 47);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes Anim_shake{
+    0%,
+    100%{
+        transform: translateX();
+    }
+    10%,30%,50%,70%{
+        transform: translateX(-10px);
+    }
+    20%,40%,60%{
+        transform: translateX(10px);
+    }
+    80%{
+        transform: translateX(8px);
+    }
+    90%{
+        transform: translateX(-8px);
+    }
+}   
+@media screen and(max-width:768px) {
+    .Service_cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}   */
+.Service_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default for large screens */
+    gap: 30px;
+    padding: 1rem 0px ;
+    /* border: 2px solid red; */
+}
+
+.Service_cards .Service_card {
+    padding: 30px 25px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: gainsboro;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.Service_cards .Service_card:hover {
+    border-color: black;
+    border: 3px solid;
+    animation: Anim_shake 1s forwards linear;
+}
+
+.Service_cards .Service_card h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: initial;
+}
+
+.Service_cards .Service_card p {
+    font-size: 13px;
+    margin-top: 3px;
+    color: rgb(231, 11, 47);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes Anim_shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60% {
+        transform: translateX(10px);
+    }
+    80% {
+        transform: translateX(8px);
+    }
+    90% {
+        transform: translateX(-8px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Service_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .Service_cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Service_cards .Service_card {
+        padding: 20px 15px;
+    }
+
+    .Service_cards .Service_card h3 {
+        font-size: 20px;
+    }
+
+    .Service_cards .Service_card p {
+        font-size: 11px;
+    }
+}
+
